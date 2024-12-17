@@ -31,3 +31,15 @@ This is the pump we used in BioTube for extruding alginate solution of high conc
 ![assembly_4](https://anonymous.4open.science/r/pump-0157/img/assembly_4.png)
 ![assembly_5](https://anonymous.4open.science/r/pump-0157/img/assembly_5.png)
 ![assembly_6](https://anonymous.4open.science/r/pump-0157/img/assembly_6.png)
+
+# Hardware
+We used [Adafruit TB6612](https://www.adafruit.com/product/2448?gad_source=1&gclid=CjwKCAiA34S7BhAtEiwACZzv4feKOWty9u_dhpJHnMaGh85bf2fnYS228pUAWPnXRmB9vD5l0R1kcBoCeTUQAvD_BwE) as the stepper motor driver board and Arduino Uno as the micro-controller. Detailed assembly and wiring setup tutorials can be found [here](https://learn.adafruit.com/adafruit-tb6612-h-bridge-dc-stepper-motor-driver-breakout). 
+
+# Spooling System
+Using the syringe pump, we can further build a spooling system to wet-spin long fibers.
+![spooler](./img/spooler.png)
+| Part ID | Name  | Purchase Link/3D Print Model File | Notes |
+|---------|-----------|------------|------------|
+| A       | Transfer guide | [roller STL model](./model/spool/trans_roller.stl) and [stand STL model](./model/spool/trans_stand.stl)|two parts snap fit together, stand on the edge of the calcium bath.|
+| B       | Spooler | [dish STL model](./model/spool/spool_dish.stl), [guide STL model](./model/spool/spool_guide.stl), and [roller STL model](./model/spool/spool_roller.stl)|spool guide snap fit to the dish, the roller friction fit to the stepper motor(STEPPERONLINE Nema 17 Bipolar), and the motor is fixed with M3 screws onto the base dish.|
+| C       | Hardware | [stepper motor](https://www.amazon.com/dp/B0B38GX54H?ref=nb_sb_ss_w_as-reorder_k6_1_10&amp=&crid=38ALOK9A3HVA2&sprefix=stepper+mo&th=1), [Adafruit TB6612](https://www.adafruit.com/product/2448?gad_source=1&gclid=CjwKCAiA34S7BhAtEiwACZzv4feKOWty9u_dhpJHnMaGh85bf2fnYS228pUAWPnXRmB9vD5l0R1kcBoCeTUQAvD_BwE), and [Arduino Uno](https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/ref=sr_1_1_sspa?crid=3EVBEBEY5WUFD&dib=eyJ2IjoiMSJ9.MazmhFfn-DF8W5oyX_S-tDFAqLRDaMJSkroaZhdQMdgePys4UzrERZgaxu0RHrmwh6oVgxMiZ5PykFPY45Zvj87Nho46YM6UFmLyyZZjAn0L6t074YVOiWT-Q1EMX25k9gRe8ueEZ7A3kq8jP-jDkeuLtxGGCNdmPTliHHHvkVxqbvugIL-X0fECy0TzHxMwYFdukx7wd_svuEpTiAROAJ-aajf0YsN01CJUSs8xPC3EDYmW-gRf4Y5dC6FYkEryJn5V-s3US-daFTKSAhzqNwH3oRdLt56vptFPsIZFdq8.i5OoYhdnTQZC547sfhsutnHWYddfm_C7XG3OLTD-EuQ&dib_tag=se&keywords=arduino+uno&qid=1734476558&s=industrial&sprefix=arduino+uno%2Cindustrial%2C164&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)|Reference [tutorial](https://learn.adafruit.com/adafruit-tb6612-h-bridge-dc-stepper-motor-driver-breakout) for TB6612 wiring. We further used two potentiometers to tune the extrusion speed of the syringe pump and the spooling speed of the spooler on the fly so they can match.|
