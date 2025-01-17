@@ -10,7 +10,7 @@ Stepper stepper(STEPS, 4, 5, 6, 7);
 unsigned long lastStepTime = 0;
 
 // Variables for left motor speed control
-float desiredRPM = 0.2; // Initial RPM for left motor
+float desiredRPM = 1.37; // Initial RPM for left motor
 float minRPM = 0.1; // Minimum RPM for left motor
 float maxRPM = 5; // Maximum RPM for left motor
 
