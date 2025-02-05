@@ -1,7 +1,7 @@
 # Overview
 This is the pump we used in BioTube for extruding alginate solution of high concentration (4%) and thus high viscocity. The noozle of the syringe can be directly vertically put into a Calcium solution bath without extra tubing connections.
 
-![Main Image](https://github.com/biotube-alginate/pump/tree/main/img/main.png)
+![Main Image](./img/main.png)
 
 # BOM
 > ⚠️ **Note**: The syringe holde in our design is specified for 60mL Easy Glide syringe, and syringes from different brand or of different volumes might vary in size and thus doesn't fit into our design.
